@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --kerem: #C08B5C;
+    --blues: #3ABEF9;
+}
+
+
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #C08B5C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-shadow: 0 10 100px;
+    position: relative;
+}
+
+.navbar .logo {
+    font-size: 30px;
+}
+
+.navbar .logo i {
+    margin-left: 5px;
+}
+
+.navbar .links {
+    width: 800px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .links ul {
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar .links li a {
+    text-decoration: none;
+    color: #272829;
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    transition: .3s;
+}
+
+.navbar .links a:hover {
+    color: #eee;
+}
+
+.navbar .sign {
+    color: #eee;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.navbar .sign i {
+    cursor: pointer;
+    text-shadow: 0 0 10px black;
+    position: relative;
+}
+
+.navbar .sign i .num {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    top: -10px;
+    right: -7px;
+    text-align: center;
+    padding: 4px;
+}
+
+.navbar .search-bar {
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    transition: .7s;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.navbar .search-bar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.navbar .search-bar input {
+    width: 350px;
+    height: 40px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.navbar .search-bar button {
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.bg {
+    background-image: url(../img/bg.jpg);
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg .text {
+    width: 800px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 100px 70px;
+    position: absolute;
+    border-radius: 0.5rem;
+    padding: 0 40px;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.5));
+}
+
+.bg .text h1 {
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    margin: 40px 0;
+    font-family: "Caveat", cursive;
+}
+
+.bg .text p {
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.bg .text .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 20px;
+}
+
+.bg .text .btns .btn {
+    font-size: 2rem;
+    padding: 0.4rem 3rem;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: "Caveat", cursive;
+}
+
+.bg .text .btns .btn:hover {
+    color: var(--kerem);
+    border: 1px solid var(--kerem);
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #eee;
+}
+
+.about h1 {
+    color: #000;
+    font-size: 3rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    padding: 25px 0;
+    margin-left: 45rem;
+}
+
+.about .imgc {
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+.about .text {
+    width: 1000px;
+    height: 800px;
+    background-color: #404040;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+    float: right;
+    margin-right: 4rem;
+}
+
+.about .text p {
+    color: #eee;
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.about .text .p2 {
+    margin-top: 50px;
+}
+
+.comments {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.comments h1 {
+    color: #000;
+    font-size: 3rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.comments .boxes {
+    width: 90%;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+}
+
+.comments .box {
+    width: 450px;
+    height: 550px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.comments .box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+.comments .box p {
+    position: absolute;
+    left: 100px;
+    top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.comments .box .stars {
+    position: absolute;
+    left: 110px;
+    top: 55px
+}
+
+.comments .box .stars i {
+    color: gold;
+    font-size: 20px;
+}
+
+.comments .box .unbox .text {
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 23px;
+    padding: 0 12px;
+    font-family: 'poppins';
+}
+
+.comments .box .text p {
+    margin-top: 150px;
+    margin-right: 70px;
+}
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--kerem);
+    position: relative;
+}
+
+.footer .heading {
+    padding: 20px 100px;
+    font-size: 60px;
+    font-family: "Caveat", cursive;
+    font-weight: bolder;
+    color: white;
+}
+
+.footer .sign {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+.footer .sign i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer .container {
+    width: 1400px;
+    height: 370px;
+    top: 50px;
+    right: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer .container .box {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+.footer .container .box h1 {
+    display: inline;
+    border-bottom: 1px solid white;
+    font-size: 35px;
+
+}
+
+.footer .container .box p {
+    padding-top: 40px;
+    font-size: 21px;
+}
+
+.footer .youtube:hover {
+    color: red;
+}
+
+.footer .twch:hover {
+    color: purple;
+}
+
+.footer .blu:hover {
+    color: var(--blues);
+}
+
+/* swiper */
+
+.swiper {
+    width: 100%;
+    height: 700px;
+    background-color: #272829;
+    padding: 50px;
+}
+
+.swiper-slide {
+    height: 600px;
+    background: whitesmoke;
+    text-align: center;
+    border-radius: 1rem;
+    width: 100px;
+    font-family: 'poppins', sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: grab;
+
+}
+
+.swiper-slide img{
+    width: 300px;
+}
