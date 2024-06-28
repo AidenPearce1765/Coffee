@@ -427,7 +427,6 @@
     }
 
     .navbar {
-        width: 768px;
         height: 50px;
         background-color: #C08B5C;
         display: flex;
@@ -435,11 +434,10 @@
         justify-content: space-between;
         box-shadow: 0 10 100px;
         position: relative;
-
     }
 
     .navbar .logo {
-        color: red;
+        color: blue;
         font-size: 15px;
     }
 
@@ -464,5 +462,9 @@
             0 0 30px rgba(0, 0, 0, 0.4),
             0 0 40px rgba(0, 0, 0, 0.2);
         position: relative;
+    }
+
+    .navbar .links {
+        display: none;
     }
 }
