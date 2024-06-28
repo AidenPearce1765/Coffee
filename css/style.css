@@ -416,6 +416,23 @@
 
 }
 
-.swiper-slide img{
+.swiper-slide img {
     width: 300px;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        width: 100%;
+        height: 50px;
+        background-color: #C08B5C;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 10 100px;
+        position: relative;
+    }
+
+    .navbar .logo {
+        font-size: 10px;
+    }
 }
