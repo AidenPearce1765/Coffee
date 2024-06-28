@@ -421,8 +421,13 @@
 }
 
 @media screen and (max-width:768px) {
+
+    .section {
+        width: 768px;
+    }
+
     .navbar {
-        width: 100%;
+        width: 768px;
         height: 50px;
         background-color: #C08B5C;
         display: flex;
@@ -430,10 +435,34 @@
         justify-content: space-between;
         box-shadow: 0 10 100px;
         position: relative;
+
     }
 
     .navbar .logo {
-        font-size: 10px;
         color: red;
+        font-size: 15px;
+    }
+
+    .comments .boxes {
+        width: 90%;
+        height: 1500px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.5rem;
+        gap: 50px;
+    }
+
+    .comments .box {
+        width: 450px;
+        height: 600px;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6),
+            0 0 30px rgba(0, 0, 0, 0.4),
+            0 0 40px rgba(0, 0, 0, 0.2);
+        position: relative;
     }
 }
