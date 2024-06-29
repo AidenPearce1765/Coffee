@@ -420,7 +420,11 @@
     width: 300px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:576px) {
+
+    body{
+        max-width: 576px;
+    }
 
     .section {
         width: 768px;
@@ -428,17 +432,13 @@
 
     .navbar {
         height: 50px;
-        background-color: #C08B5C;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 10 100px;
-        position: relative;
+        padding: 0 30px;
     }
 
     .navbar .logo {
-        color: blue;
+        color: black;
         font-size: 15px;
+        font-weight: bold;
     }
 
     .comments .boxes {
@@ -465,6 +465,10 @@
     }
 
     .navbar .links {
+        display: none;
+    }
+
+    .navbar .sign{
         display: none;
     }
 }
